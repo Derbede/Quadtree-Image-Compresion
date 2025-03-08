@@ -1,0 +1,9 @@
+Am creat un arbore unde am inclus dimeansiunea maxima a fiecarui nod, daca era nedivizat era dimeansiunea pe are o avea, daca era divizat era 
+initializat cu 0, cei 4 fii si culorile fiecarui pixel.
+Am creat functia de creare a arborelui, functie recursiva care in functie de valorile medii pentru rosu, verde si albastru si de prag
+ne diviza sau nu fiecare submatrice patratica, iar apoi am divizat unde era cazul pana la finalul arborelui.
+Am creat functii pentru nivelul arborelui (inaltime), numarul de frunze si pentru dimensiunea cea mai mare a unei submatrici (nod ) care nu a fost divizat, 
+ajutandu-ne atat de tipul nodului cat si de campul size (dimensiune) al fiecarui nod.
+In main am deschis fisierele de scriere/ citire, am citit din fisier binar conform cerintelor iar apoi am initializat matricea de pixeli pentru matricea de pixeli,
+avand dimensiunea de height * width si ne-am utilizat de ea pentru calred, calgreen si calblue, ca sa aflam valorile medii ale culorilor.
+Apoi am creat arborele, am utilizat functiile din functions.c si am scris in fisier datele pe care le-am aflat.
