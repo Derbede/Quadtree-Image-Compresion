@@ -1,9 +1,54 @@
-Am creat un arbore unde am inclus dimeansiunea maxima a fiecarui nod, daca era nedivizat era dimeansiunea pe are o avea, daca era divizat era 
-initializat cu 0, cei 4 fii si culorile fiecarui pixel.
-Am creat functia de creare a arborelui, functie recursiva care in functie de valorile medii pentru rosu, verde si albastru si de prag
-ne diviza sau nu fiecare submatrice patratica, iar apoi am divizat unde era cazul pana la finalul arborelui.
-Am creat functii pentru nivelul arborelui (inaltime), numarul de frunze si pentru dimensiunea cea mai mare a unei submatrici (nod ) care nu a fost divizat, 
-ajutandu-ne atat de tipul nodului cat si de campul size (dimensiune) al fiecarui nod.
-In main am deschis fisierele de scriere/ citire, am citit din fisier binar conform cerintelor iar apoi am initializat matricea de pixeli pentru matricea de pixeli,
-avand dimensiunea de height * width si ne-am utilizat de ea pentru calred, calgreen si calblue, ca sa aflam valorile medii ale culorilor.
-Apoi am creat arborele, am utilizat functiile din functions.c si am scris in fisier datele pe care le-am aflat.
+# Quadtree Image Compression
+
+## Overview
+This project implements an image compression algorithm using a quadtree structure. It processes images by recursively subdividing them into quadrants and encoding the image data in a hierarchical format.
+
+## Features
+- Reads binary image files.
+- Constructs a quadtree representation of the image.
+- Computes and stores image statistics.
+- Outputs results in a structured format.
+
+## File Structure
+- `quadtree.c` - Main entry point for handling input arguments and processing images.
+- `functions.c` - Contains core functions for quadtree construction and image analysis.
+- `Makefile` - Defines build rules for compiling the project.
+
+## Compilation
+To compile the project, run:
+```sh
+make
+```
+This will generate the executable file.
+
+## Usage
+To run the program, use one of the following commands:
+```sh
+./quadtree -c1 <threshold> <input_file> <output_file>
+```
+- `-c1` builds the quadtree and outputs image statistics.
+- `<threshold>` sets the quadtree division sensitivity.
+- `<input_file>` specifies the input binary image.
+- `<output_file>` specifies where to save the output data.
+
+Alternatively, to run a different mode:
+```sh
+./quadtree -c2 <input_file> <output_file>
+```
+- `-c2` executes another mode (to be detailed further based on implementation).
+
+## Dependencies
+- Standard C libraries (`stdlib.h`, `stdio.h`, `math.h`, `string.h`).
+
+## Future Improvements
+- Implement additional compression techniques.
+- Optimize memory usage and processing speed.
+- Add support for more image formats.
+- Improve error handling and debugging tools.
+
+## License
+This project is open-source and available under the MIT License.
+
+## Authors
+Developed by [Your Name].
+
