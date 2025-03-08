@@ -1,54 +1,64 @@
-# Quadtree Image Compression
+Quadtree Image Compression
 
-## Overview
+Overview
 This project implements an image compression algorithm using a quadtree structure. It processes images by recursively subdividing them into quadrants and encoding the image data in a hierarchical format.
 
-## Features
-- Reads binary image files.
-- Constructs a quadtree representation of the image.
-- Computes and stores image statistics.
-- Outputs results in a structured format.
+Features
 
-## File Structure
-- `quadtree.c` - Main entry point for handling input arguments and processing images.
-- `functions.c` - Contains core functions for quadtree construction and image analysis.
-- `Makefile` - Defines build rules for compiling the project.
+Reads binary image files.
 
-## Compilation
+Constructs a quadtree representation of the image.
+
+Computes and stores image statistics.
+
+Outputs results in a structured format.
+
+File Structure
+
+quadtree.c - Main entry point for handling input arguments and processing images.
+
+functions.c - Contains core functions for quadtree construction and image analysis.
+
+Makefile - Defines build rules for compiling the project.
+
+Compilation
 To compile the project, run:
-```sh
 make
-```
 This will generate the executable file.
 
-## Usage
+Usage
 To run the program, use one of the following commands:
-```sh
-./quadtree -c1 <threshold> <input_file> <output_file>
-```
-- `-c1` builds the quadtree and outputs image statistics.
-- `<threshold>` sets the quadtree division sensitivity.
-- `<input_file>` specifies the input binary image.
-- `<output_file>` specifies where to save the output data.
+./quadtree -c1  <input_file> <output_file>
+
+-c1 builds the quadtree and outputs image statistics.
+
+ sets the quadtree division sensitivity.
+
+<input_file> specifies the input binary image.
+
+<output_file> specifies where to save the output data.
 
 Alternatively, to run a different mode:
-```sh
 ./quadtree -c2 <input_file> <output_file>
-```
-- `-c2` executes another mode (to be detailed further based on implementation).
 
-## Dependencies
-- Standard C libraries (`stdlib.h`, `stdio.h`, `math.h`, `string.h`).
+-c2 executes another mode (to be detailed further based on implementation).
 
-## Future Improvements
-- Implement additional compression techniques.
-- Optimize memory usage and processing speed.
-- Add support for more image formats.
-- Improve error handling and debugging tools.
+Dependencies
 
-## License
+Standard C libraries stdlib.h, stdio.h, math.h, string.h.
+
+Future Improvements
+
+Implement additional compression techniques.
+
+Optimize memory usage and processing speed.
+
+Add support for more image formats.
+
+Improve error handling and debugging tools.
+
+License
 This project is open-source and available under the MIT License.
 
-## Authors
-Developed by [Your Name].
-
+Authors
+Developed by Your Name.
