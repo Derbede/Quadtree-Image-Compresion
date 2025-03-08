@@ -19,7 +19,33 @@ quadtree.c - Main entry point for handling input arguments and processing images
 
 functions.c - Contains core functions for quadtree construction and image analysis.
 
+struct.h - Defines the data structures used for the quadtree representation.
+
 Makefile - Defines build rules for compiling the project.
+
+Data Structures
+The project uses the following data structures defined in struct.h:
+
+RGB struct: Represents the color of a pixel using red, green, and blue values.
+
+Nod struct: Represents a node in the quadtree, storing color data and pointers to child nodes.
+
+Arbore type: A pointer to a Nod, representing the quadtree itself.
+
+Main Functions
+The project includes several functions for processing images and building the quadtree:
+
+calred, calgreen, calblue - Compute the average red, green, and blue values in a given region.
+
+divizare - Determines whether a region should be further divided.
+
+insert_nod - Recursively constructs the quadtree.
+
+numarare - Counts the number of leaf nodes in the quadtree.
+
+zona_maxima - Finds the largest uniform region in the quadtree.
+
+nivel - Computes the depth of the quadtree.
 
 Compilation
 To compile the project, run:
